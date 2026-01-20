@@ -1,0 +1,133 @@
+============================================================
+FORGE TRADING SYSTEM - BACKTEST
+============================================================
+
+Backtesting SOLUSDT 5m...
+  Trades: 7
+  Win Rate: 14.3%
+  Profit Factor: 0.22
+  Max DD: 2.8%
+
+Backtesting SOLUSDT 15m...
+  Trades: 9
+  Win Rate: 22.2%
+  Profit Factor: 0.21
+  Max DD: 7.2%
+
+Backtesting SOLUSDT 30m...
+  Trades: 20
+  Win Rate: 40.0%
+  Profit Factor: 0.63
+  Max DD: 9.4%
+
+Backtesting SOLUSDT 1h...
+  Trades: 8
+  Win Rate: 62.5%
+  Profit Factor: 1.11
+  Max DD: 2.9%
+
+Backtesting BTCUSDT 5m...
+  Trades: 3
+  Win Rate: 0.0%
+  Profit Factor: 0.00
+  Max DD: 1.3%
+
+Backtesting BTCUSDT 15m...
+  Trades: 8
+  Win Rate: 37.5%
+  Profit Factor: 1.37
+  Max DD: 1.3%
+
+Backtesting BTCUSDT 30m...
+  Trades: 19
+  Win Rate: 21.1%
+  Profit Factor: 0.32
+  Max DD: 8.4%
+
+Backtesting BTCUSDT 1h...
+  Trades: 9
+  Win Rate: 44.4%
+  Profit Factor: 0.84
+  Max DD: 3.3%
+
+Backtesting ETHUSDT 5m...
+  Trades: 9
+  Win Rate: 11.1%
+  Profit Factor: 0.02
+  Max DD: 3.5%
+
+Backtesting ETHUSDT 15m...
+  Trades: 17
+  Win Rate: 47.1%
+  Profit Factor: 0.62
+  Max DD: 4.5%
+
+Backtesting ETHUSDT 30m...
+  Trades: 21
+  Win Rate: 28.6%
+  Profit Factor: 0.36
+  Max DD: 12.5%
+
+Backtesting ETHUSDT 1h...
+  Trades: 14
+  Win Rate: 35.7%
+  Profit Factor: 0.36
+  Max DD: 10.5%
+
+Backtesting BNBUSDT 5m...
+  Trades: 10
+  Win Rate: 0.0%
+  Profit Factor: 0.00
+  Max DD: 4.6%
+
+Backtesting BNBUSDT 15m...
+  Trades: 11
+  Win Rate: 45.5%
+  Profit Factor: 1.32
+  Max DD: 1.1%
+
+Backtesting BNBUSDT 30m...
+  Trades: 19
+  Win Rate: 21.1%
+  Profit Factor: 0.21
+  Max DD: 10.8%
+
+Backtesting BNBUSDT 1h...
+  Trades: 5
+  Win Rate: 20.0%
+  Profit Factor: 0.19
+  Max DD: 2.9%
+
+Backtesting PAXGUSDT 5m...
+  Trades: 36
+  Win Rate: 5.6%
+  Profit Factor: 0.01
+  Max DD: 10.3%
+
+Backtesting PAXGUSDT 15m...
+  Trades: 23
+  Win Rate: 17.4%
+  Profit Factor: 0.10
+  Max DD: 6.1%
+
+Backtesting PAXGUSDT 30m...
+  Trades: 25
+  Win Rate: 24.0%
+  Profit Factor: 0.18
+  Max DD: 6.5%
+
+Backtesting PAXGUSDT 1h...
+  Trades: 27
+  Win Rate: 48.1%
+  Profit Factor: 0.42
+  Max DD: 6.3%
+
+============================================================
+SUMMARY
+============================================================
+Total Backtests: 20
+Total Trades: 300
+Avg Win Rate: 27.3%
+Avg Profit Factor: 0.42
+
+✅ Results saved to data/per_asset_backtest.json

@@ -1,0 +1,89 @@
+# V8 FINAL - Configuration
+# Target: 5-10 trades/day with 55-65% WR
+
+system:
+  version: "V8_FINAL_PRODUCTION"
+  mode: "LIVE"
+
+# 10 pairs for more signals
+exchange:
+  symbols:
+    - "BTC/USDT"
+    - "ETH/USDT"
+    - "SOL/USDT"
+    - "BNB/USDT"
+    - "XRP/USDT"
+    - "DOGE/USDT"
+    - "AVAX/USDT"
+    - "LINK/USDT"
+    - "MATIC/USDT"
+    - "PAXG/USDT"
+  
+  # Focus on faster timeframes
+  timeframes: ["5m", "15m", "1h"]
+
+# Session filter (UTC)
+sessions:
+  enabled: true
+  # Only trade during high volatility
+  london_start: 8
+  london_end: 17
+  newyork_start: 13
+  newyork_end: 22
+  # Best = overlap 13:00-17:00 UTC
+
+# Signal weights (6 types)
+signals:
+  divergence:
+    enabled: true
+    weight: 35
+    pivot_order: 5
+  rsi:
+    enabled: true
+    weight: 20
+    oversold: 32  # Optimized from 35
+    overbought: 68  # Optimized from 65
+  ema_cross:
+    enabled: true
+    weight: 15
+    fast: 9
+    slow: 21
+  volume_spike:
+    enabled: true
+    weight: 10
+    multiplier: 2.0
+  sweep:
+    enabled: true
+    weight: 15
+  sr_break:
+    enabled: true
+    weight: 5
+
+# Scoring
+scoring:
+  threshold: 70  # Optimized: 66.7% WR at this level
+  min_signals: 2  # Need at least 2 confirmations
+
+# Regime filter
+regime:
+  adx_threshold: 15
+  bb_squeeze: 0.003
+
+# Risk
+risk:
+  sl_atr_mult: 1.2
+  tp_atr_mult: 2.0
+  fee_rate: 0.001
+  slippage_rate: 0.0005
+  max_holding_bars: 20
+
+# WebSocket
+websocket:
+  url: "wss://stream.binance.com:9443/stream?streams="
+  reconnect_delay: 3
+
+# AI Meta-Model
+ai:
+  enabled: true
+  model_path: "ai_model.joblib"
+  confidence_threshold: 0.55  # Only take trades if AI confidence >= 55%

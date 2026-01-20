@@ -1,0 +1,158 @@
+/Users/anmol/Desktop/gold/marketforge/core/backtest.py:94: RuntimeWarning: divide by zero encountered in scalar divide
+  f = (p * (b + 1) - 1) / b
+============================================================
+FORGE TRADING SYSTEM - BACKTEST
+============================================================
+
+Backtesting BTCUSDT 5m...
+  Trades: 3
+  Win Rate: 33.3%
+  Profit Factor: 0.13
+  Max DD: 1.0%
+
+Backtesting BTCUSDT 15m...
+  Trades: 31
+  Win Rate: 16.1%
+  Profit Factor: 0.29
+  Max DD: 4.0%
+
+Backtesting BTCUSDT 30m...
+  Trades: 48
+  Win Rate: 16.7%
+  Profit Factor: 0.37
+  Max DD: 4.5%
+
+Backtesting BTCUSDT 1h...
+  Trades: 55
+  Win Rate: 20.0%
+  Profit Factor: 0.52
+  Max DD: 5.1%
+
+Backtesting ETHUSDT 5m...
+  Trades: 3
+  Win Rate: 66.7%
+  Profit Factor: 2.09
+  Max DD: 0.5%
+
+Backtesting ETHUSDT 15m...
+  Trades: 34
+  Win Rate: 20.6%
+  Profit Factor: 0.40
+  Max DD: 4.0%
+
+Backtesting ETHUSDT 30m...
+  Trades: 55
+  Win Rate: 16.4%
+  Profit Factor: 0.42
+  Max DD: 2.7%
+
+Backtesting ETHUSDT 1h...
+  Trades: 58
+  Win Rate: 20.7%
+  Profit Factor: 0.70
+  Max DD: 4.1%
+
+Backtesting SOLUSDT 5m...
+  Trades: 6
+  Win Rate: 66.7%
+  Profit Factor: 3.34
+  Max DD: 0.6%
+
+Backtesting SOLUSDT 15m...
+  Trades: 40
+  Win Rate: 20.0%
+  Profit Factor: 0.42
+  Max DD: 4.1%
+
+Backtesting SOLUSDT 30m...
+  Trades: 59
+  Win Rate: 11.9%
+  Profit Factor: 0.31
+  Max DD: 4.0%
+
+Backtesting SOLUSDT 1h...
+  Trades: 67
+  Win Rate: 13.4%
+  Profit Factor: 0.32
+  Max DD: 8.9%
+
+Backtesting BNBUSDT 5m...
+  Trades: 1
+  Win Rate: 0.0%
+  Profit Factor: 0.00
+  Max DD: 0.7%
+
+Backtesting BNBUSDT 15m...
+  Trades: 24
+  Win Rate: 8.3%
+  Profit Factor: 0.12
+  Max DD: 3.9%
+
+Backtesting BNBUSDT 30m...
+  Trades: 62
+  Win Rate: 11.3%
+  Profit Factor: 0.23
+  Max DD: 5.8%
+
+Backtesting BNBUSDT 1h...
+  Trades: 65
+  Win Rate: 18.5%
+  Profit Factor: 0.48
+  Max DD: 7.4%
+
+Backtesting PAXGUSDT 5m...
+  Trades: 0
+  Win Rate: 0.0%
+  Profit Factor: 0.00
+  Max DD: 0.0%
+
+Backtesting PAXGUSDT 15m...
+  Trades: 0
+  Win Rate: 0.0%
+  Profit Factor: 0.00
+  Max DD: 0.0%
+
+Backtesting PAXGUSDT 30m...
+  Trades: 14
+  Win Rate: 14.3%
+  Profit Factor: 0.28
+  Max DD: 3.7%
+
+Backtesting PAXGUSDT 1h...
+  Trades: 34
+  Win Rate: 11.8%
+  Profit Factor: 0.21
+  Max DD: 2.4%
+
+============================================================
+SUMMARY
+============================================================
+Total Backtests: 20
+Total Trades: 659
+Avg Win Rate: 19.3%
+Avg Profit Factor: 0.53
+Traceback (most recent call last):
+  File "/Users/anmol/Desktop/gold/marketforge/run.py", line 213, in <module>
+    main()
+    ~~~~^^
+  File "/Users/anmol/Desktop/gold/marketforge/run.py", line 201, in main
+    run_backtest()
+    ~~~~~~~~~~~~^^
+  File "/Users/anmol/Desktop/gold/marketforge/run.py", line 126, in run_backtest
+    json.dump(backtest_data, f, indent=2)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bool is not JSON serializable

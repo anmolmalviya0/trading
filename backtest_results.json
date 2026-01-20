@@ -1,0 +1,40 @@
+{
+  "summary": {
+    "total_backtests": 20,
+    "total_trades": 88,
+    "avg_win_rate": 0.249,
+    "avg_profit_factor": 0.27
+  },
+  "best_performers": [
+    {
+      "asset": "SOLUSDT",
+      "tf": "30m",
+      "trades": 11,
+      "winrate": 0.545,
+      "pf": 1.13,
+      "dd": 0.033
+    },
+    {
+      "asset": "ETHUSDT",
+      "tf": "1h",
+      "trades": 3,
+      "winrate": 1.0,
+      "pf": 0,
+      "dd": 0
+    },
+    {
+      "asset": "BTCUSDT",
+      "tf": "30m",
+      "trades": 9,
+      "winrate": 0.444,
+      "pf": 0.5,
+      "dd": 0.026
+    }
+  ],
+  "warnings": [
+    "Low avg win rate (24.9%) - consider raising threshold",
+    "Low profit factor (0.27) - system needs optimization",
+    "5m timeframes show no trades - insufficient data"
+  ],
+  "confidence_score": 35
+}
