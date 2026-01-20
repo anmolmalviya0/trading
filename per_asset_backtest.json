@@ -1,0 +1,79 @@
+{
+  "summary": {
+    "data_range": "2021-01-01 to 2026-01-19",
+    "timeframe": "Multi",
+    "total_trades": 182,
+    "avg_win_rate": 0.28250013875013874,
+    "avg_profit_factor": 0.17348673502572373
+  },
+  "assets": {
+    "SOLUSDT": {
+      "name": "SOLUSDT",
+      "trades": 8,
+      "win_rate": 0.625,
+      "profit_factor": 1.1085425970601577,
+      "total_pnl_pct": 0.5496991870859835,
+      "sample_entry": 0,
+      "sample_tp": 0,
+      "sample_sl": 0,
+      "strategy": "Institutional (VWAP+OFI)",
+      "note": "WR: 62.5% PF: 1.11"
+    },
+    "BTCUSDT": {
+      "name": "BTCUSDT",
+      "trades": 1,
+      "win_rate": 0.0,
+      "profit_factor": 0.0,
+      "total_pnl_pct": 0.0,
+      "sample_entry": 0,
+      "sample_tp": 0,
+      "sample_sl": 0,
+      "strategy": "Institutional (VWAP+OFI)",
+      "note": "WR: 0.0% PF: 0.00"
+    },
+    "ETHUSDT": {
+      "name": "ETHUSDT",
+      "trades": 20,
+      "win_rate": 0.35,
+      "profit_factor": 0.41997384614674776,
+      "total_pnl_pct": -10.604963426537928,
+      "sample_entry": 0,
+      "sample_tp": 0,
+      "sample_sl": 0,
+      "strategy": "Institutional (VWAP+OFI)",
+      "note": "WR: 35.0% PF: 0.42"
+    },
+    "BNBUSDT": {
+      "name": "BNBUSDT",
+      "trades": 2,
+      "win_rate": 1.0,
+      "profit_factor": 0,
+      "total_pnl_pct": 0.25379946211019355,
+      "sample_entry": 0,
+      "sample_tp": 0,
+      "sample_sl": 0,
+      "strategy": "Institutional (VWAP+OFI)",
+      "note": "WR: 100.0% PF: 0.00"
+    },
+    "PAXGUSDT": {
+      "name": "PAXGUSDT",
+      "trades": 7,
+      "win_rate": 0.0,
+      "profit_factor": 0.0,
+      "total_pnl_pct": -2.4061210501284513,
+      "sample_entry": 0,
+      "sample_tp": 0,
+      "sample_sl": 0,
+      "strategy": "Institutional (VWAP+OFI)",
+      "note": "WR: 0.0% PF: 0.00"
+    }
+  },
+  "confidence_score": 28,
+  "honest_assessment": {
+    "can_achieve_65_70_wr": false,
+    "can_achieve_profitability": false,
+    "key_insight": "Institutional features (VWAP/OFI) active. Trade count lower but higher quality.",
+    "recommendation": "Monitor forward testing.",
+    "limitation": "Backtest period includes 2022 bear market."
+  }
+}
